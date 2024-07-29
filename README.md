@@ -11,3 +11,13 @@ Dataset generation within the transient use case provide sufficient training/val
 b. Event detection and identification algorithms.
 
 This use-case provides containerized data-driven algorithm that takes dataset on workstation and trains the transient algorithm inside the docker container. Upon the completion of training and testing, trained model, training and testing results and plots will be copied from docker container to local station.   
+
+## data_generation_pipeline updates
+
+There are a few updates on the data generation pipeline branch.
+
+-The AtpLoop_all_feeders_PV.py script is modified to run on IEEE13 with a few additional randomization effects to improve the variability of the training data.
+-gen_npz.py is updated to handle the random start time/length variation and to scale voltage and current to p.u. values. It also has a function added to handle files generated in ATPDraw.
+-collect_atpdraw_sims.py is added to simplify the merging of multiple simulations generated with ATPDraw.
+-comtrade_to_csv.py is added to create csv files
+
