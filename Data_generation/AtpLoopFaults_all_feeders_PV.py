@@ -37,7 +37,11 @@ def run_atp_fault_case(bus, phs, slgf, fname):
     # Vary the starting phase (This doesn't work because ATP always starts at the same phase)
     vary_phase = False
     if vary_phase:
+<<<<<<< Updated upstream
         freq_base = 60 #np.random.rand()*360
+=======
+        freq_base = np.random.rand()*360
+>>>>>>> Stashed changes
         freqa = f'{freq_base:0.3f}'#.rjust(10)
         freqb = f'{freq_base-120:0.3f}'#.rjust(10)
         freqc = f'{freq_base-240:0.3f}'#.rjust(10)
