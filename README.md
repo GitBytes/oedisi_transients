@@ -16,8 +16,8 @@ This use-case provides containerized data-driven algorithm that takes dataset on
 
 There are a few updates on the data generation pipeline branch.
 
--The AtpLoop_all_feeders_PV.py script is modified to run on IEEE13 with a few additional randomization effects to improve the variability of the training data.
--gen_npz.py is updated to handle the random start time/length variation and to scale voltage and current to p.u. values. It also has a function added to handle files generated in ATPDraw.
--collect_atpdraw_sims.py is added to simplify the merging of multiple simulations generated with ATPDraw.
--comtrade_to_csv.py is added to create csv files
+-The AtpLoop_all_feeders_PV.py script is modified to run on IEEE13 with a few additional randomization effects to improve the variability of the training data.  
+-gen_npz.py is updated to handle the random start time/length variation and to scale voltage and current to p.u. values. It also has a function added to handle files generated in ATPDraw.  
+-collect_atpdraw_sims.py is added to simplify the merging of multiple simulations generated with ATPDraw.  
+-comtrade_to_csv.py is added to create csv files  
 
